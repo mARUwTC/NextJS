@@ -16,9 +16,30 @@ export default function Home() {
 
         <h1>Welcome!</h1>
 
+        <h2>Upload File</h2>
+
+        <div className={styles.grid}>
+          <Link href="/UploadtoFilestack">
+                <a>
+                  <div className={styles.cards1}>
+                    <Image src="/upload2.svg" alt="UploadtoFilestack" width={80}height={70}/><br/>
+                    Upload Files to Filestack
+                  </div>
+                </a>
+          </Link>
+          <Link href="/UploadbyHTTPrequest">
+                <a>
+                  <div className={styles.cards1}>
+                    <Image src="/upload2.svg" alt="UploadbyHTTPrequest" width={80}height={70}/><br/>
+                    Upload Files to Server by HTTP Request
+                  </div>
+                </a>
+          </Link>
+        </div>
+
         <h2>Tools</h2>
 
-        <div class={styles.grid}>
+        <div className={styles.grid}>
             <Link href="/RandomNumber">
               <a>
                 <div className={styles.cards}>
@@ -52,6 +73,7 @@ export default function Home() {
               </a>
             </Link>
         </div>
+        
 
       </main>
     </div>

@@ -6,12 +6,17 @@
 }
 
 .main {
-  padding: 4rem 0;
-  flex: 1;
+  padding: 2rem 0 4rem;
   display: block;
   text-align: center;
   justify-content: center;
   align-items: center;
+  flex: 1 0 auto;
+}
+
+.main h2 {
+  text-decoration: underline;
+  padding: 1rem 0;
 }
 
 .grid {
@@ -20,20 +25,36 @@
   grid-column-gap: 20px;
   grid-row-gap: 10px;
   justify-content: center;
+  padding: 20px;
+}
+
+.cards1{
+  min-height: 150px;
+  border: 2px solid #e7e7e7;
+  border-radius: 10px;
+  padding: 1rem 1rem 0;
+  align-items: flex-end;
+  justify-content: center;
+  transition: all .3s;
+  line-height: 1.8;
 }
 
 .cards{
   min-height: 150px;
   border: 2px solid #e7e7e7;
   border-radius: 10px;
-  padding: 1rem;
+  padding: 1rem 1rem 0;
   align-items: flex-end;
   justify-content: center;
+  transition: all .3s;
+  line-height: 1.8;
 }
 
 .cards:hover {
   color: #2475ac;
-  font-weight: var(--bold);
+  font-weight: bold;
+  box-shadow: 2px 8px 10px #999;
+  transform: translateY(-2px);
 }
 
 /* @media (max-width: 520px) {

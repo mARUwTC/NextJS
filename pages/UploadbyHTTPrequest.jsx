@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import styles from '../styles/UploadbyHTTPrequest.module.css';
 
-
+function handleClick(event) {
+    console.log(event.target.value);
+}
 
 function UploadbyHTTPrequest() {
     return (

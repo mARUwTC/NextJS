@@ -30,6 +30,7 @@ class RandomNumber extends React.Component {
         }
         return (
             <div style={styles.RandomNumber}>
+                <h1>Random number in 1-100</h1>
                 <h3>Please Press the button.</h3>
                 <button onClick={this.handleClick.bind(this)}>GO</button>
                 <div>The random number is: {this.state.random}</div>

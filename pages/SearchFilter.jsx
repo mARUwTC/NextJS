@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import styles from '../styles/SearchFilter.module.css'
 
-
 function SearchFilter() {
 
-    const list = ["banana", "apple", "orange", "mango"];
+    const list = ["banana", "apple", "orange", "mango", "avocado", "cheese", "pieapple", "watermelon", "cherry"];
 
     const [filterList, setFilterList] = useState(list);
 

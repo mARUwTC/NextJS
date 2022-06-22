@@ -1,5 +1,8 @@
 .container {
   padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  float: none;
 }
 
 .main {
@@ -13,24 +16,31 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 10px;
+  grid-template-columns: repeat(auto-fit, 200px);
+  grid-column-gap: 20px;
   grid-row-gap: 10px;
+  justify-content: center;
 }
 
 .cards{
-  min-height: 200px;
+  min-height: 150px;
   border: 2px solid #e7e7e7;
   border-radius: 10px;
-  padding: .5rem;
-  display: flex;
+  padding: 1rem;
   align-items: flex-end;
   justify-content: center;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.cards:hover {
+  color: #2475ac;
+  font-weight: var(--bold);
 }
+
+/* @media (max-width: 520px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+    grid-row-gap: 100px;
+  }
+} */

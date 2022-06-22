@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -18,25 +19,38 @@ export default function Home() {
         <h2>Tools</h2>
 
         <div class={styles.grid}>
-
-          <div className={styles.cards}>
             <Link href="/RandomNumber">
-              <a>RandomNumber</a>
+              <a>
+                <div className={styles.cards}>
+                  <Image src="/randomnumber.svg" alt="Random Number" width={80}height={80}/>
+                  RandomNumber100
+                </div>
+              </a>
             </Link>
-          </div>
-
-          <div className={styles.cards}>
+            <Link href="/RandomNumber2">
+              <a>
+                <div className={styles.cards}>
+                  <Image src="/randomnumber.svg" alt="Random Number" width={80}height={80}/>
+                  ManualRandomNumber
+                </div>
+              </a>
+            </Link>
             <Link href="/SearchFilter">
-              <a>SearchFilter</a>
+              <a>
+                <div className={styles.cards}>
+                  <Image src="/search.svg" alt="Random Number" width={80}height={80}/>
+                  SearchFilter
+                </div>
+              </a>
             </Link>
-          </div>
-
-          <div className={styles.cards}>
-            <Link href="/">
-              <a>SimpleCalculator</a>
+            <Link href="/SimpleCalculator">
+              <a>
+                <div className={styles.cards}>
+                  <Image src="/calculator.svg" alt="Random Number" width={80}height={80}/>
+                  SimpleCalculator
+                </div>
+              </a>
             </Link>
-          </div>
-
         </div>
 
       </main>

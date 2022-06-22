@@ -1,9 +1,10 @@
-.SearchFilter {
-    display: flex;
+.RandomNumber2 {
     text-align: center;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 20px;
     height: 50vh;
+    min-height: 50vh
 }

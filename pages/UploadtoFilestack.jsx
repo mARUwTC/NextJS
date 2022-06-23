@@ -9,6 +9,9 @@ function UploadtoFilestack() {
     const options = {
         onFileUploadFinished(file) {
             console.log(file.url);
+            return (
+                {url}
+            );
         }
     }
 
@@ -20,6 +23,7 @@ function UploadtoFilestack() {
         <>
         <div className={styles.UploadtoFilestack}>
             <button onClick={handleClick}>Upload</button>
+            <options></options>
         </div>
         </>
     )
